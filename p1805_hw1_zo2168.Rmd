@@ -1,0 +1,55 @@
+---
+title: "p1805_hw1_zo2168"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+# Problem 1
+
+```{r}
+data("penguins", package = "palmerpenguins")
+colnames(penguins)
+distinct(penguins, species)
+distinct(penguins,island)
+distinct(penguins, sex)
+```
+
+```{r max and min of some variables}
+max(pull(penguins, bill_length_mm), na.rm = T)
+min(pull(penguins, bill_length_mm), na.rm = T)
+max(pull(penguins, bill_depth_mm), na.rm = T)
+min(pull(penguins, bill_depth_mm), na.rm = T)
+max(pull(penguins, flipper_length_mm), na.rm = T)
+min(pull(penguins, flipper_length_mm), na.rm = T)
+max(pull(penguins, body_mass_g), na.rm = T)
+min(pull(penguins, body_mass_g), na.rm = T)
+```
+
+```{r}
+range(pull(penguins, year),na.rm = T)
+nrow(penguins)
+ncol(penguins)
+```
+
+
+```{r flipper length mean}
+mean(pull(penguins, flipper_length_mm), na.rm = T)
+```
+The variable names include `species`,`island`,`bill_length_mm`,`bill_depth_mm`,`flipper_length_mm`,`body_mass_g`, `sex`, `year`.\
+Three `species` are *Adelie*, *Gentoo*, *Chinstrap*,\
+Three `island` are *Torgersen*, *Biscoe*, *Dream*,\
+The maximum and minimum of `bill_length_mm` are 59.6 mm and 32.1 mm respectively\
+The maximum and minimum of `bill_depth_mm` are 21.5 mm and 13.1 mm respectively\
+The maximum and minimum of `flipper_length_mm` are 231 mm and 172 mm respectively\
+The maximum and minimum of `body_mass_g` are 6300 and 2700 respectively\
+`Year` ranges from 2007 to 2009\
+`sex` includes male and female\
+This dataset has 344 rows and 8 columns\
+Mean flipper length is 200.9152
+
+# Problem 2
+
+I can take the mean of the sample, too! The mean is 

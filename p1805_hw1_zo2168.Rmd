@@ -48,7 +48,7 @@ The maximum and minimum of `body_mass_g` are 6300 and 2700 respectively\
 `Year` ranges from 2007 to 2009\
 `sex` includes male and female\
 This dataset has 344 rows and 8 columns\
-Mean flipper length is 200.9152 is 
+Mean flipper length is 200.9152
 
 
 ```{r}
@@ -86,10 +86,8 @@ mean(factor_three_levels)
 The `charactor_vector` and `factor_three_levels` does not have the mean.  
 
 ```{r}
-#as.numeric(logi)
-#as.numeric(character_vector)
+as.numeric(logi)
+as.numeric(character_vector)
 as.numeric((factor_three_levels))
-
 ```
-
-It doesn't work for the logistic vector, character vector. But it works for the factor_three_levels
+It can explain that mean of character_vector does not return a specific value, but doesn't imply why factor_three_levesl does not have the mean. 

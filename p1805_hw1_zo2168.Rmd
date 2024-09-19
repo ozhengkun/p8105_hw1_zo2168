@@ -90,4 +90,4 @@ as.numeric(logi)
 as.numeric(character_vector)
 as.numeric((factor_three_levels))
 ```
-It can explain that mean of character_vector does not return a specific value, but doesn't imply why factor_three_levesl does not have the mean. 
+It can explain that mean of character_vector does not return a specific value, but doesn't imply why factor_three_levesl does not have the mean.
